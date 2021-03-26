@@ -12,3 +12,15 @@ export const createBatch = asyncError(async (req, res, next) => {
         batch
     })
 })
+
+
+//get all the batches ----> api/batches
+export const getBatches = asyncError(async (req, res, next) => {
+
+    const batches = await Batch.find()
+    res.status(200).success({
+        success: true,
+        batches
+    })
+
+})
