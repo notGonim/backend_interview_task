@@ -1,7 +1,7 @@
 # backend_interview_task
 
 
-> this is my solution for the task for the junior backend developer  
+> this is my solution for the junior backend developer position interview 
 
 
 ### Install Dependencies (Backend)
