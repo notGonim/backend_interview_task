@@ -14,7 +14,7 @@ export const createBatch = asyncError(async (req, res, next) => {
 })
 
 
-//get all the batches ----> api/batches
+//get all the batches ----> api/batch
 export const getBatches = asyncError(async (req, res, next) => {
 
     const batches = await Batch.find()
@@ -25,9 +25,16 @@ export const getBatches = asyncError(async (req, res, next) => {
 
 })
 
+
+
 //this func should be refactor and to rewrite its code again coz i am not splitting the code the right way but this is the fastest way to get the res
 
 /*
+
+*** well for sure to search for a specific data and filter it you should spilt it to another func 
+so the first function needed is search() where it takes batches data and color&&size  needed then filter the data and return the new array of batches obj 
+
+
 -- will with this function you can either get batches with certain color only   api/batch?color=---
 -- will with this function you can either get batches with certain color && size  api/batch?color=---&&size=---
 -- will with this function you can either get batches with certain color or get all the batches  api/batch 
