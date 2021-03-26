@@ -11,4 +11,8 @@ npm i
 ```
 
 
-then to run the server    npm start 
+### run the server  
+
+```
+npm start
+```
