@@ -22,7 +22,7 @@ const batchSchema = new mongoose.Schema(
             required: [true, 'Please Enter the Quantity  of that batch'],
             type: Number,
             min: [1, 'Your Quantity should not be zero ']
-        }
+        }   
     }
 )
 
