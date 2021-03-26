@@ -18,7 +18,7 @@ export const createBatch = asyncError(async (req, res, next) => {
 export const getBatches = asyncError(async (req, res, next) => {
 
     const batches = await Batch.find()
-    res.status(200).success({
+    res.status(200).json({
         success: true,
         batches
     })

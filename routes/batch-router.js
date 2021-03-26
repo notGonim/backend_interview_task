@@ -1,10 +1,11 @@
 import express from 'express'
-import { createBatch } from '../controllers/batch-controller.js'
+import { createBatch, getBatches } from '../controllers/batch-controller.js'
 
 
 export const BatchRouter = express.Router()
 
 
 
-BatchRouter.post('/batch/new',createBatch)
+BatchRouter.post('/batch/new', createBatch)
+BatchRouter.get('/batches', getBatches)
 
