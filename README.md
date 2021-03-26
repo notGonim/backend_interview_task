@@ -1,4 +1,4 @@
-# garment_backend_task
+# backend_interview_task
 
 
 > this is my solution for the task for the junior backend developer  
